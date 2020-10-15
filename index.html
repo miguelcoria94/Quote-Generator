@@ -10,7 +10,10 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 
-    <title>Document</title>
+    <title>Quote Generator</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=miguelcoria94.github.io/Vanilla-JS-Portfolio/">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -19,7 +22,30 @@
     crossorigin="anonymous">
 </head>
 <body>
+    <!-- quote container -->
+    <div class="quote__container" id="quote-container">
+        <!-- quote -->
+        <div class="quote__container-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote">You don't have to be great to start, but you have to start to be great.</span>
+            <i class="fas fa-quote-right"></i>
+        </div>
 
+        <!-- quote author -->
+        <div class="quote-author__container">
+            <span id="author">Zig Ziglar</span>
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="button__container">
+            <button class="twitter-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-twitter"></i>
+            </button>
+
+            <button id="new-quote">New Quote</button>
+        </div>
+    </div>
 
 
 
