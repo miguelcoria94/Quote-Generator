@@ -8,27 +8,23 @@ window.addEventListener("DOMContentLoaded", event => {
     const newQuoteBtn = document.getElementById('new-quote');
     
     async function getQuote() {
-        let randomNumber = Math.floor(Math.random() * 11)
+        //the free api was down, but I found this one
+        let largeInt = Math.floor(Math.random() * 80)
         const apiUrl = 'https://type.fit/api/quotes';
         try {
             const response = await fetch(apiUrl);
             const data = await response.json()
     
-            quoteText.innerTEXT = data[randomNumber].text
-            authorText.innerTEXT = data[randomNumber].author
-            console.log(data[randomNumber])
+            quoteText.innerHTML = data[largeInt].text
+            authorText.innerHTML = data[largeInt].author
             
         } catch (error) {
             console.log('Could not get quote', error);
         }
     }
-    
-    //get quote on load
-    
+
+    //listen for button click
     newQuoteBtn.addEventListener('click', event => {
-        
         getQuote()
     })
-    
 })
-// get quote from api
