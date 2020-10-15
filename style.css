@@ -14,3 +14,74 @@ body {
     justify-content: center;
 }
 
+.quote__container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+}
+
+.quote__container-text {
+    font-size: 2.5rem;
+}
+
+.long-quote{
+    font-size: 1.5rem;
+}
+
+.fa-quote-left, .fa-quote-right {
+    font-size: 4rem;
+}
+
+.quote-author__container{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button__container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.45)
+}
+
+button:hover {
+    background-color: rgb(54, 54, 51);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 225, 225, 0.45)
+}
+
+.twitter-button {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .quote__container {
+        margin: auto;
+    }
+
+    .quote__container-text{
+        font-size: 2rem;
+    }
+
+    .fa-quote-left, .fa-quote-right {
+    font-size: 2rem;
+    }
+}
